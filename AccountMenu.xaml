@@ -1,0 +1,46 @@
+﻿<Page x:Class="Shopicon.AccountMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:Shopicon"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="250"
+      Title="AccountMenu"
+      x:Name="AccountMenu1"
+      x:FieldModifier="public"
+      >
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <materialDesign:Card
+                 materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                 Padding="32"
+                 Grid.RowSpan="3"/>
+
+        <Button     
+                    Grid.Row="0"   
+                    Style="{DynamicResource MaterialDesignRaisedButton}"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                    Margin="7.5,0,7.5,0"
+                    Content="Моя страница"                                                
+         />
+        <Button     
+                    Grid.Row="1"
+                    Background="White"
+                    Foreground="#4527a0"  
+                    Style="{DynamicResource MaterialDesignRaisedButton}"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth2" 
+                    Margin="7.5,0,7.5,0"
+                    Content="Выйти"           
+        />
+
+    </Grid>
+</Page>

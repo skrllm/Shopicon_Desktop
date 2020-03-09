@@ -1,0 +1,99 @@
+﻿<Page x:Class="Shopicon.Registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:Shopicon"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="350"
+      Title="Registration">
+
+    
+        <Grid>
+
+              <Grid.ColumnDefinitions>
+                 <ColumnDefinition Width="55"/>
+                 <ColumnDefinition Width="*"/>
+                 <ColumnDefinition Width="55"/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                 <RowDefinition Height="*"/>
+                 <RowDefinition Height="50"/>
+                 <RowDefinition Height="50"/>
+                 <RowDefinition Height="50"/>
+                 <RowDefinition Height="50"/>
+                 <RowDefinition Height="auto"/>
+                                
+              </Grid.RowDefinitions>
+
+              <materialDesign:Card
+                 materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                 Padding="32"
+                 Grid.ColumnSpan="3"
+                 Grid.RowSpan="6"/>
+
+              <Grid Grid.ColumnSpan="3">
+                    <Grid.RowDefinitions>
+                         <RowDefinition Height="40"/>
+                         <RowDefinition Height="30"/>
+                         <RowDefinition Height="40"/>
+                         <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center" Style="{StaticResource MaterialDesignHeadline4TextBlock}" Foreground="#757575">Welcome</TextBlock>
+            <TextBlock Grid.Row="1" HorizontalAlignment="Center" Style="{StaticResource MaterialDesignHeadline5TextBlock}" Foreground="#757575">to the</TextBlock>
+            <TextBlock Grid.Row="2" HorizontalAlignment="Center" Style="{StaticResource MaterialDesignHeadline4TextBlock}" Foreground="#673ab7">Shopicon club,</TextBlock>
+            <TextBlock Grid.Row="3" HorizontalAlignment="Center" Style="{StaticResource MaterialDesignHeadline6TextBlock}" Foreground="#757575">Buddy</TextBlock>
+        </Grid>
+            
+              <TextBox 
+                    Name="NameTextBox"
+                    materialDesign:HintAssist.Hint="Имя"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                    VerticalAlignment="Center" 
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Margin="0,0,0,10"/>
+              <TextBox  
+                    Name="LoginTextBox"
+                    materialDesign:HintAssist.Hint="Логин"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                    VerticalAlignment="Center" 
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Margin="0,0,0,10"/>
+              <PasswordBox
+                    Name="PasswordTextBox"
+                    materialDesign:HintAssist.Hint="Пароль"                
+                    materialDesign:TextFieldAssist.HasClearButton="True"
+                    materialDesign:HintAssist.HelperText="Не менее 8 символов"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    Margin="0,0,0,20"/>
+              <Button     
+                    Style="{DynamicResource MaterialDesignRaisedButton}"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth2"   
+                    Content="Зарегистрироваться"                  
+                    Grid.Column="1"
+                    Grid.Row="4"                                   
+                    VerticalAlignment="Center" Click="Button_Click"                 
+                 />
+              <Button     
+                    Style="{DynamicResource MaterialDesignRaisedButton}"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth2"   
+                    Content="Переход к Логину"
+                    Grid.Column="1"
+                    Grid.Row="5"
+                    Background="White"
+                    Foreground="#4527a0"                  
+                    VerticalAlignment="Center"
+                    Margin="0,5,0,20"
+                    Command="{x:Static materialDesign:Flipper.FlipCommand}"
+              />
+
+    </Grid>
+    
+
+   
+
+</Page>

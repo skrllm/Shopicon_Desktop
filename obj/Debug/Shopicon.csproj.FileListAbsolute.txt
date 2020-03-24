@@ -28,3 +28,6 @@ C:\Users\mikhi\Desktop\Shopicon\obj\Debug\Login.g.cs
 C:\Users\mikhi\Desktop\Shopicon\obj\Debug\Login.baml
 C:\Users\mikhi\Desktop\Shopicon\obj\Debug\AccountMenu.g.cs
 C:\Users\mikhi\Desktop\Shopicon\obj\Debug\AccountMenu.baml
+C:\Users\mikhi\Desktop\Shopicon\obj\Debug\MenuUserControl.g.cs
+C:\Users\mikhi\Desktop\Shopicon\obj\Debug\MenuUserControl.baml
+C:\Users\mikhi\Desktop\Shopicon\obj\Debug\GeneratedInternalTypeHelper.g.cs

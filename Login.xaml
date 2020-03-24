@@ -18,6 +18,7 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
+          
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
@@ -65,13 +66,15 @@
                     Grid.Column="1"
                     Grid.Row="2"
                     Margin="0,0,0,20"/>
-        <Button     
+        <Button 
+                    x:Name="EnterLoginButton"     
                     Style="{DynamicResource MaterialDesignRaisedButton}"
                     materialDesign:ShadowAssist.ShadowDepth="Depth2"   
                     Content="Войти"                  
                     Grid.Column="1"
                     Grid.Row="3"                                   
-                    VerticalAlignment="Center"                 
+                    VerticalAlignment="Center"
+                    Click="EnterLoginButton_Click"                 
                  />
         <Button     
                     Style="{DynamicResource MaterialDesignRaisedButton}"
@@ -82,8 +85,17 @@
                     Background="White"
                     Foreground="#4527a0"                  
                     VerticalAlignment="Center"
-                  Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                    Command="{x:Static materialDesign:Flipper.FlipCommand}"
               />
-
+        <TextBlock 
+                    x:Name="LoginErrorTextBox"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Style="{StaticResource MaterialDesignHeadline4TextBlock}"
+                    Foreground="#c30000" FontSize="14">
+                    
+        </TextBlock>
     </Grid>
 </Page>

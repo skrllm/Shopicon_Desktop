@@ -20,18 +20,24 @@ namespace Shopicon
     /// </summary>
     public partial class MainWindow : Window
     {
-        //public object newlol = new AccountMenu();
+        public static bool IsAccountEnter = false; 
         public MainWindow()
         {
             InitializeComponent();
 
 
-            Menu.Navigate(new Menu());
-            Registration.Navigate(new Registration());
-            Login.Navigate(new Login());
-            AccountMenu.Navigate(new AccountMenu());
-      
 
+            //Registration.Navigate(new Registration());
+            //Login.Navigate(new Login(IsAccountEnter));
+
+            AccountMenu.Navigate(new AccountMenu());
+            AccountMenu.Visibility = Visibility.Hidden;
+            AccountFlipper.Visibility = Visibility.Hidden;
+
+            Menu.Navigate(new Menu(AccountMenu,AccountFlipper));
+
+            Registration.Navigate(new Registration());
+            Login.Navigate(new Login(IsAccountEnter,Menu));
         }
         private void Flipper_OnIsFlippedChanged(object sender, RoutedPropertyChangedEventArgs<bool> e)
         {

@@ -20,9 +20,11 @@ namespace Shopicon
     /// </summary>
     public partial class AccountMenu : Page
     {
+       
         public AccountMenu()
         {
             InitializeComponent();
+            
         }
         
     }

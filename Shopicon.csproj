@@ -66,8 +66,13 @@
     <Compile Include="AccountMenu.xaml.cs">
       <DependentUpon>AccountMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="api.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUserControl.xaml.cs">
+      <DependentUpon>MenuUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="ShopiconDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -79,6 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MenuUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

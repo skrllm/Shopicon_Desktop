@@ -21,13 +21,45 @@ namespace Shopicon
     /// </summary>
     public partial class Menu : Page
     {
-       
-        public Menu()
+        Frame AccountMenu;
+        MaterialDesignThemes.Wpf.Flipper AccountFlipper;
+        public bool IsAccountEnter = false;
+        public Menu(Frame AccountMenu,MaterialDesignThemes.Wpf.Flipper AccountFlipper/*,bool IsAccountEnter*/)
         {
-           
+            this.AccountMenu = AccountMenu;
+            this.AccountFlipper = AccountFlipper;
+            //this.IsAccountEnter = IsAccountEnter;
             InitializeComponent();
+
         }
 
-      
+        private void OpenAccountMenu(object sender, RoutedEventArgs e)
+        {
+
+            if (IsAccountEnter == false)
+            {
+                if (AccountFlipper.Visibility == Visibility.Hidden)
+                {
+                    AccountFlipper.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    AccountFlipper.Visibility = Visibility.Hidden;
+                }
+            }
+            else
+            {
+                if (AccountMenu.Visibility == Visibility.Hidden)
+                {
+                    AccountMenu.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    AccountMenu.Visibility = Visibility.Hidden;
+                }
+            }
+            
+            
+        }
     }
 }

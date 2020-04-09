@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\mikhi\Desktop\Shopicon\App.xaml
-6-1195410136
+51096320372
 91-1747984253
-13-820116175
+19-1489060250
 151357499676
-AccountMenu.xaml;Login.xaml;MenuUserControl.xaml;Registration.xaml;MainWindow.xaml;Menu.xaml;
+View\AccountMenu.xaml;View\Login.xaml;View\Registration.xaml;View\MainWindow.xaml;View\Header.xaml;
 
 False
 

@@ -1,9 +1,8 @@
 ﻿
 FC:\Users\mikhi\Desktop\Shopicon\App.xaml;;
-FC:\Users\mikhi\Desktop\Shopicon\AccountMenu.xaml;;
-FC:\Users\mikhi\Desktop\Shopicon\Login.xaml;;
-FC:\Users\mikhi\Desktop\Shopicon\MenuUserControl.xaml;;
-FC:\Users\mikhi\Desktop\Shopicon\Registration.xaml;;
-FC:\Users\mikhi\Desktop\Shopicon\MainWindow.xaml;;
-FC:\Users\mikhi\Desktop\Shopicon\Menu.xaml;;
+FC:\Users\mikhi\Desktop\Shopicon\View\AccountMenu.xaml;;
+FC:\Users\mikhi\Desktop\Shopicon\View\Login.xaml;;
+FC:\Users\mikhi\Desktop\Shopicon\View\Registration.xaml;;
+FC:\Users\mikhi\Desktop\Shopicon\View\MainWindow.xaml;;
+FC:\Users\mikhi\Desktop\Shopicon\View\Header.xaml;;
 
